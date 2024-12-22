@@ -1,0 +1,14 @@
+{
+  "name": "arb-logger",
+  "version": "1.0.0",
+  "description": "A simple logger built in javascript",
+  "main": "index.js",
+  "homepage": "https://github.com/ARIBUDEV/arb-logger",
+  "bugs": "https://github.com/ARIBUDEV/arb-logger/issues",
+  "repository": {
+    "url": "https://github.com/ARIBUDEV/arb-logger",
+    "type": "git"
+  },
+  "author": "ARIBU",
+  "license": "MIT"
+}
