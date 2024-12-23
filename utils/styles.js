@@ -1,4 +1,4 @@
-const styles = {
+const textStyles = {
     reset: 0,
     bold: 1,
     dim: 2,
@@ -9,15 +9,15 @@ const styles = {
     inverse: 7,
     strikethrough: 9,
     hidden: 8,
-    shown: 28,
-    nostrikethrough: 29,
-    nounderline: 24,
-    nooverline: 55,
-    noblink: 25,
-    noinverse: 27
+    visible: 28,
+    noStrikethrough: 29,
+    noUnderline: 24,
+    noOverline: 55,
+    noBlink: 25,
+    noInverse: 27
 };
 
-const sStyles = {
+const shorthandToStyle = {
     '&i': 'inverse',
     '&j': 'dim',
     '&k': 'blink',
@@ -27,6 +27,6 @@ const sStyles = {
     '&o': 'italic',
     '&p': 'overline',
     '&r': 'reset',
-}
+};
 
-module.exports = (code) => styles[sStyles[code]];
+module.exports = (shorthandCode) => textStyles[shorthandToStyle[shorthandCode]];
