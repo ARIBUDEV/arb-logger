@@ -14,7 +14,7 @@ const textStyles = {
     noUnderline: 24,
     noOverline: 55,
     noBlink: 25,
-    noInverse: 27
+    noInverse: 27,
 };
 
 const shorthandToStyle = {
@@ -27,6 +27,13 @@ const shorthandToStyle = {
     '&o': 'italic',
     '&p': 'overline',
     '&r': 'reset',
+    '&h': 'hidden',
+    '&v': 'visible',
+    '&x': 'noStrikethrough',
+    '&u': 'noUnderline',
+    '&q': 'noOverline',
+    '&w': 'noBlink',
+    '&z': 'noInverse',
 };
 
 module.exports = (shorthandCode) => textStyles[shorthandToStyle[shorthandCode]];
