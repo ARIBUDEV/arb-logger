@@ -1,6 +1,6 @@
 {
   "name": "arb-logger",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "A simple logger built in javascript",
   "main": "index.js",
   "homepage": "https://github.com/ARIBUDEV/arb-logger",
