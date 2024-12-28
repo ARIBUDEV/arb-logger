@@ -1,13 +1,26 @@
+/*!
+ * arb-logger <https://github.com/ARIBUDEV/arb-logger>
+ * Released under the MIT License.
+ */
+
 const getColor = require('./utils/colors');
 const getStyle = require('./utils/styles');
 const formatDate = require('./utils/formatDate');
+
+// Default log templates
+const defaultLogs = {
+    success: '&f&!7{timestamp}&r &2[SUCESSO] &a{text}',
+    error: '&f&!7{timestamp}&r &4[ERRO] &c{text}',
+	warn: '&f&!7{timestamp}&r &6[AVISO] &e{text}',
+	info: '&f&!7{timestamp}&r &3[INFO] &b{text}'
+}
 
 /**
  * Creates log functions based on a template configuration.
  * @param {Object} logsTemplate - Object containing log templates.
  * @returns {Object} - Object with log functions for each template.
  */
-module.exports = (logsTemplate) => {
+module.exports = (logsTemplate = defaultLogs) => {
     const logFunctions = {};
 
     for (const logType in logsTemplate) {
