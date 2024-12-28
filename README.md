@@ -76,4 +76,11 @@ log.custom('This is a custom message');
 &o -> Italic
 &p -> Overline
 &r -> Reset
+&h -> Hidden
+&v -> Visible
+&x -> No Strikethrough
+&u -> No Underline
+&q -> No Overline
+&w -> No Blink
+&z -> No Inverse
 ```
