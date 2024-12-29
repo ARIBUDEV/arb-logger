@@ -20,7 +20,7 @@ log.info('This is an info message');
 Using custom log template
 
 ```js
-const log = require('./index')({
+const log = require('arb-logger')({
     custom: '&f&!7{timestamp}&r &8[CUSTOM] &7{text}'
 });
 
